@@ -1,0 +1,164 @@
+:root {
+    --margin-page: 60px;
+    --color-base: #F4F4F4;
+    --color-action: #DCC562;
+    --color-accesories: #AA7F2C;
+    --color-background: #171717;
+}
+
+@font-face {
+    font-family: text;
+    src: url(/asset/Roboto-Bold.ttf);
+}
+
+* {
+    padding: unset;
+    margin: unset;
+    border: unset;
+    outline: unset;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+body {
+    color: var(--color-lettersone);
+    background-color: var(--color-background);
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px var(--margin-page);
+    background-color: var(--color-background);
+}
+
+.encabezado p {
+    font-family: text;
+    font-size: 26px;
+    color: var(--color-base);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px var(--margin-page);
+}
+
+.menu-mobile {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+.menu-logo {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+}
+
+.menu-logo a {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+}
+
+.menu-logo img {
+    height: 24px;
+    margin: 0;
+}
+
+.menu-mobile span {
+    font-family: text;
+    font-size: 18px;
+    color: var(--color-base);
+    margin: 0;
+}
+
+.menu-plegable {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.menu-plegable p {
+    font-family: text;
+    font-size: 18px;
+    text-align: center;
+    color: var(--color-base);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu-mobile:hover .menu-plegable {
+    display: block;
+}
+
+.menu-plegable ul {
+    list-style: none;
+}
+
+.menu-plegable li {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+
+.menu-plegable li a {
+    font-family: text;
+    font-size: 18px;
+    display: flex;
+    padding: 10px;
+    gap: 85px;
+    color: var(--color-base);
+}
+
+.menu-plegable li a:hover {
+    background-color: var(--color-accesories);
+    border-radius: 10px;
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo  img {
+    height: 150px;
+}
+
+.contactanos span {
+    font-family: text;
+    font-size: 18px;
+    color: var(--color-base);
+}
+
+.contact-login-bag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.bag {
+    height: 24px;
+}
+
+.user {
+    height: 24px;
+}
