@@ -45,7 +45,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px var(--margin-page);
-    background-color: var(--color-background);
+    /* background-color: var(--color-background); */
+    background-image: linear-gradient(to top, #17171700,#171717 80%);
+    
 }
 
 .encabezado p {
@@ -70,8 +72,9 @@ body {
 .menu-logo {
     padding: 10px 20px;
     border: none;
-    cursor: pointer;
     margin: 0;
+    position: relative;
+    cursor: default;
 }
 
 .menu-logo a {
@@ -83,6 +86,7 @@ body {
 .menu-logo img {
     height: 24px;
     margin: 0;
+    cursor: pointer;
 }
 
 .menu-mobile span {
@@ -93,10 +97,13 @@ body {
 }
 
 .menu-plegable {
-    display: none;
+    /* display: none; */
     position: absolute;
-    min-width: 160px;
+    /* min-width: 160px; */
     z-index: 1;
+    top: 60px;
+    clip-path: circle(0 at 0 0);
+    transition: clip-path .3s ease-in;
 }
 
 .menu-plegable p {
@@ -107,27 +114,26 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0;
 }
 
-.menu-mobile:hover .menu-plegable {
-    display: block;
+.menu-mobile .menu-plegable.show {
+    clip-path: circle(200% at 0 0);
 }
 
-.menu-plegable ul {
-    list-style: none;
-}
 
 .menu-plegable li {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     padding: 20px;
+    cursor: pointer;
 }
 
 .menu-plegable li a {
     font-family: text;
     font-size: 18px;
     display: flex;
+    justify-content: space-between;
     padding: 10px;
     gap: 85px;
     color: var(--color-base);
