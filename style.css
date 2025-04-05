@@ -32,6 +32,12 @@ header {
 body {
     color: var(--color-lettersone);
     background-color: var(--color-background);
+    background-image: linear-gradient(0deg, #171717, rgba(202, 202, 202, 0)),
+     url(/asset/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .encabezado {
@@ -97,7 +103,7 @@ body {
     font-family: text;
     font-size: 18px;
     text-align: center;
-    color: var(--color-base);
+    color: var(--color-action);
     display: flex;
     justify-content: space-between;
     align-items: center;
