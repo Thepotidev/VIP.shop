@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description"
+        content="VIP.shop es una tienda online de ropa y accesorios de lujo para damas y caballeros.">
+
+    <meta name="keywords"
+        content="tienda online, ropa, accesorios, hombre, mujer, vip, premium, tendencias, calidad, exclusividad, elegancia, lujo, glamour, comprar, tendencia, ropa de marca, ropa de lujo, ropa de calidad, ropa exclusiva, ropa elegante, ropa de moda">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="icon" href="">
+
+    <title>VIP.shop</title>
+
+</head>
+
+<!--Cuerpo de la pagina-->
+<body>
+
+    <header id="navbar">
+
+        <!--Banner de encabezado-->
+        <nav class="encabezado">
+
+            <div class="social-media">
+
+                <a href="#" rel="nofollow" aria-label="Instagram">
+
+                    <img src="asset/IG.svg">
+
+                </a>
+
+                <a href="#" rel="nofollow" aria-label="TikTok">
+
+                    <img src="asset/TIKTOK.svg">
+
+                </a>
+
+            </div>
+
+            <div class="slider-one">
+
+                <span class="emoji-surprise">💎</span>
+
+                <span id="slider-text">Bienvenidos al club</span>
+
+                <span class="emoji-surprise">💎</span>
+
+            </div>
+
+            <div class="social-media">
+
+                <a href="#" rel="nofollow" aria-label="Instagram">
+
+                        <img src="asset/IG.svg">
+
+                    </a>
+
+                    <a href="#" rel="nofollow" aria-label="TikTok">
+
+                        <img src="asset/TIKTOK.svg">
+                        
+                    </a>
+
+            </div>
+            <!--Fin del banner de encabezado-->
+
+        </nav><br>
+
+        <!--Menu de navegacion-->
+        <nav class="menu">
+            
+            <nav class="menu-mobile">
+
+                <div class="menu-logo" id="toggle-icon">
+                    
+                    <a href="#" rel="nofollow" aria-label="Open mobile menu">
+                        <img src="asset/menu left.png">
+                        <span>Menu</span>
+                    </a>
+
+                    <ul class="menu-plegable" id="toggle-menu">
+
+                        <p>Descubre la Colección Exclusiva</p>
+    
+                        <li>
+                            <a href="products.html">Productos<img src="asset/Circle Right.png"></a>
+                        </li>
+    
+                        <li>
+                            <a href="promotions.html">Promociones<img src="asset/Circle Right.png"></a>
+                        </li>
+    
+                    </ul>
+
+                </div>
+                  
+
+            </nav>
+
+            <div class="logo">
+                
+                <a href="home.html" rel="home" aria-label="Site logo">
+                    <img src="asset/VIP sin fondo.png">
+                </a>
+
+            </div>
+
+            <div class="contact-login-bag">
+
+                <div class="contactanos">
+
+                    <a href="contact.html" rel="nofollow" aria-label="Contactanos">
+                        <span>Contactanos</span>
+                    </a>
+
+                </div>
+
+
+                <div class="login">
+
+                    <a href="login.html" rel="nofollow" aria-label="Usuario">
+                        <img src="asset/user.svg">
+                    </a>
+
+                </div>
+
+                 <div class="bag">
+
+                    <img src="asset/bag.svg" alt="Carrito">
+                    <span id="bag-count">0</span>
+
+                </div>
+
+            </div>
+            <!--Fin del menu de navegacion-->
+            
+            <!-- Overlay translúcido -->
+            <div class="shopping-overlay" id="shoppingOverlay"></div>
+
+            <aside class="shopping-sidebar" id="shoppingSidebar">
+                
+                <button class="close-btn" onclick="closeCart()">✕</button>
+
+                <h2>Tu carrito</h2>
+
+                <button id="go-checkout-btn" class="go-checkout-btn" onclick="goToCheckout()">Finalizar compra</button>
+                
+            </aside>
+
+        </nav>
+
+    </header>
+    <!--Fin del encabezado-->
+
+    <div class="promotions-card">
+
+        <h1>Promociones</h1>
+
+    </div>
+
+    <section class="slider-section">
+
+        <div class="slider-column">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+
+                        <h3>Nombre</h3>
+                        <img src="asset/images/producto-1.jpg">
+                        <h2>10.00 $</h2>
+                        <div class="button-add-container">
+                            <button class="button-add" onclick="add('producto-1', 10)">Agregar</button>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <h3>Nombre</h3>
+                        <img src="asset/images/producto-2.jpg">
+                        <h2>20.00 $</h2>
+                        <div class="button-add-container">
+                            <button class="button-add" onclick="add('producto-2', 20)">Agregar</button>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <h3>Nombre</h3>
+                        <img src="asset/images/producto-3.jpg">
+                        <h2>30.00 $</h2>
+                        <div class="button-add-container">
+                            <button class="button-add" onclick="add('producto-3', 30)">Agregar</button>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <h3>Nombre</h3>
+                        <img src="asset/images/producto-4.jpg">
+                        <h2>40.00 $</h2>
+                        <div class="button-add-container">
+                            <button class="button-add" onclick="add('producto-4', 40)">Agregar</button>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <h3>Nombre</h3>
+                        <img src="asset/images/producto-5.jpg">
+                        <h2>50.00 $</h2>
+                        <div class="button-add-container">
+                            <button class="button-add" onclick="add('producto-5', 50)">Agregar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-button-prev"> <img src="asset/Circle Left.png"> </div>
+                <div class="swiper-button-next"> <img src="asset/Circle Right.png"> </div>
+            </div>
+        </div>
+    
+    <script src="src/scripts/toggleMenu.js"></script>
+    <script src="src/scripts/navScroll.js"></script>
+    <script src="src/scripts/sliderHeader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/scripts/sliderSwiper.js"></script>
+    <script src="src/scripts/toggleCard.js"></script>
+</body>
+</html>

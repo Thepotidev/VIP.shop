@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description"
+        content="VIP.shop es una tienda online de ropa y accesorios de lujo para damas y caballeros.">
+
+    <meta name="keywords"
+        content="tienda online, ropa, accesorios, hombre, mujer, vip, premium, tendencias, calidad, exclusividad, elegancia, lujo, glamour, comprar, tendencia, ropa de marca, ropa de lujo, ropa de calidad, ropa exclusiva, ropa elegante, ropa de moda">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="icon" href="">
+
+    <title>VIP.shop</title>
+
+</head>
+
+<!--Cuerpo de la pagina-->
+<body>
+<!-- Formulario de inicio de sesión -->
+    <form id="otp-form" class="login-form">
+
+        <div class="logo">
+                
+            <a href="home.html" rel="home" aria-label="Site logo">
+                <img src="asset/VIP sin fondo.png">
+            </a>
+
+        </div>
+
+        <div class="login-container">
+
+            <h2>Iniciar sesión</h2>
+            <p>Ingresa tu correo electrónico y te enviaremos un código de inicio de sesión</p>
+
+        </div>
+
+        <div class="input-container">
+
+            <input type="email" id="email" name="email" required>
+            <label for="email">Correo Electronico</label>
+
+        </div>
+        
+        <button type="button" id="send-button">Enviar</button>
+
+    </form>
+<!-- Final del formulario de inicio de sesión -->
+
+ <!-- Formulario de verificación -->
+    <form id="verify-form" style="display:none;" class="login-form">
+
+        <div class="logo">
+                
+            <a href="home.html" rel="home" aria-label="Site logo">
+                <img src="asset/VIP sin fondo.png">
+            </a>
+
+        </div>
+
+        <div class="login-container">
+
+            <h2>Iniciar sesión</h2>
+            <p>Ingresa tu código de inicio de sesión</p>
+
+        </div>
+
+        <div class="input-container">
+
+            <input type="number" id="otp" maxlength="6" required>
+            <span id="timer">60</span>s
+            <label for="email">Ingresar código</label>
+
+        </div>
+        
+        <button type="button" id="verify-button">Verificar</button>
+
+    </form>
+<!-- Final del formulario de verificación -->
+    
+<script src="src/scripts/toggleMenu.js"></script>
+<script src="src/scripts/navScroll.js"></script>
+</body>
+</html>

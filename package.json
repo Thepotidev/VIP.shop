@@ -1,0 +1,17 @@
+{
+  "name": "vip.shop",
+  "version": "1.0.0",
+  "description": "vip.shop un club privado de compras",
+  "main": "products.js",
+  "scripts": {
+    "start": "node products.js",
+     "promotions": "node promotions.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thepotidev@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "swiper": "^11.2.8"
+  }
+}
